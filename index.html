@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conecta+ — solução digital simples, acessível e responsiva.">
+  <title>Conecta+ | Soluções digitais</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Conecta+, página inicial">
+        <span class="brand-mark" aria-hidden="true">+</span>
+        <span>Conecta<span>+</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <button id="theme-toggle" class="icon-button" type="button" aria-label="Ativar modo escuro" title="Alternar modo de cor">◐</button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">TECNOLOGIA • ACESSIBILIDADE • SIMPLICIDADE</p>
+          <h1 id="hero-title">Uma experiência digital feita para <span>conectar.</span></h1>
+          <p class="hero-text">Uma interface responsiva e acessível, desenvolvida com HTML5, CSS3 e JavaScript para demonstrar boas práticas de front-end.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#recursos">Conhecer recursos</a>
+            <a class="button secondary" href="#contato">Falar conosco</a>
+          </div>
+          <div class="trust-row" aria-label="Características do projeto">
+            <span>✓ Responsivo</span>
+            <span>✓ Acessível</span>
+            <span>✓ Leve</span>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Resumo da solução">
+          <img class="hero-image" src="images/conecta-preview.svg" alt="Ilustração do projeto Conecta+ com símbolo de conexão">
+          <h2>Design que funciona</h2>
+          <p>Estrutura semântica, navegação por teclado, contraste adequado e modo escuro.</p>
+          <div class="metric"><strong>AA</strong><span>Referência WCAG 2.1</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="section" aria-labelledby="recursos-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">RECURSOS</p>
+          <h2 id="recursos-title">Pensado para diferentes formas de acesso</h2>
+          <p>O projeto combina organização visual, interatividade e recursos de acessibilidade.</p>
+        </div>
+        <div class="cards">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">⌘</div>
+            <h3>Navegação intuitiva</h3>
+            <p>Menu organizado, foco visível e ordem lógica para utilização por teclado.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">◉</div>
+            <h3>Contraste adequado</h3>
+            <p>Cores selecionadas para manter boa legibilidade em diferentes condições de visualização.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">↗</div>
+            <h3>Responsividade</h3>
+            <p>Layout adaptável para computadores, tablets e smartphones, sem perda de conteúdo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section alt" aria-labelledby="sobre-title">
+      <div class="container two-columns">
+        <div>
+          <p class="eyebrow">SOBRE O PROJETO</p>
+          <h2 id="sobre-title">Front-end organizado para produção</h2>
+          <p>O projeto foi estruturado separando marcação, estilos e lógica. A organização facilita manutenção, versionamento e futuras evoluções.</p>
+          <ul class="check-list">
+            <li>HTML5 semântico</li>
+            <li>CSS responsivo</li>
+            <li>JavaScript para interações</li>
+            <li>Modo claro e escuro</li>
+            <li>Compatibilidade com teclado</li>
+          </ul>
+        </div>
+        <aside class="info-card" aria-label="Informações técnicas">
+          <span class="status-dot" aria-hidden="true"></span>
+          <strong>Projeto preparado</strong>
+          <p>Arquivos separados e leves para facilitar a publicação em plataformas de hospedagem estática.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contato" class="section" aria-labelledby="contato-title">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">CONTATO</p>
+          <h2 id="contato-title">Envie uma mensagem</h2>
+          <p>O formulário abaixo demonstra validação básica no front-end e feedback acessível ao utilizador.</p>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Nome</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button class="button primary" type="submit">Enviar mensagem</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Conecta+. Projeto acadêmico de front-end.</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
